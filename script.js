@@ -12,25 +12,23 @@ $("button").click(function() {
 if( username === correctUsername && password ===correctPassword ){
     alert("恭喜你登录成功！");
     
+}else if(username ===""){
+	alert("亲！请输入用户名");
+    
+}else if(password === ""){
+    alert("亲！请输入密码");
+    
 }else if( username === correctUsername || password !==correctPassword ){
 	alert("Sorry!你的密码可能存在问题");
     
-}else if( username !== correctUsername || password ===correctPassword ){
+}else if( username !== correctUsername ||password===correctPassword ){
 	alert("Sorry!你的用户名可能存在问题");
-    
-}else if(username ===correctUsername || password=== null){
-	alert("你好像忘记输入密码了");
-    
-}else if(username ===null || password=== correctUsername){
-	alert("你好像忘记输入用户名了");
-    
+   
 }
     
 });
-
-$("button").click(function() {
-    alert("账号：kido     密码：shiwuxuetang ");
-});
-
-
+          
+function buttonClick(){  
+	alert("账号：kido  密码：shiwuxuetang");  
+}  
 
